@@ -1,0 +1,30 @@
+plugins {
+	id 'java'
+	id 'eclipse' // optional (to generate Eclipse project files)
+	id 'idea' // optional (to generate IntelliJ IDEA project files)
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	testImplementation('org.junit.jupiter:junit-jupiter:5.4.1')
+}
+
+dependencies{
+	compile group: 'org.xerial', name:'sqlite-jdbc', version:'3.25.2'
+	
+}
+
+dependencies{
+	compile group: 'org.swinglabs', name:'swing-layout', version:'1.0.4'
+
+}
+
+test {
+	useJUnitPlatform()
+	testLogging {
+		events "passed", "skipped", "failed"
+	}
+}

@@ -1,0 +1,14 @@
+Day 28: {Leaving=1, Toileting=3, Showering=1, Sleeping=1, Breakfast=1, Lunch=1, Dinner=0, Snack=1, Spare_Time/TV=4, Grooming=2}
+Day 29: {Leaving=1, Toileting=4, Showering=1, Sleeping=1, Breakfast=1, Lunch=1, Dinner=0, Snack=1, Spare_Time/TV=7, Grooming=3}
+Day 30: {Leaving=1, Toileting=6, Showering=1, Sleeping=1, Breakfast=1, Lunch=1, Dinner=0, Snack=2, Spare_Time/TV=9, Grooming=2}
+Day 1: {Leaving=1, Toileting=2, Showering=1, Sleeping=1, Breakfast=1, Lunch=1, Dinner=0, Snack=0, Spare_Time/TV=7, Grooming=3}
+Day 2: {Leaving=0, Toileting=3, Showering=1, Sleeping=1, Breakfast=1, Lunch=1, Dinner=0, Snack=1, Spare_Time/TV=8, Grooming=4}
+Day 3: {Leaving=1, Toileting=2, Showering=1, Sleeping=1, Breakfast=1, Lunch=0, Dinner=0, Snack=0, Spare_Time/TV=5, Grooming=3}
+Day 4: {Leaving=1, Toileting=4, Showering=1, Sleeping=1, Breakfast=1, Lunch=0, Dinner=0, Snack=2, Spare_Time/TV=7, Grooming=2}
+Day 5: {Leaving=2, Toileting=5, Showering=1, Sleeping=1, Breakfast=1, Lunch=1, Dinner=0, Snack=1, Spare_Time/TV=8, Grooming=6}
+Day 6: {Leaving=0, Toileting=3, Showering=1, Sleeping=1, Breakfast=1, Lunch=1, Dinner=0, Snack=1, Spare_Time/TV=6, Grooming=4}
+Day 7: {Leaving=1, Toileting=6, Showering=1, Sleeping=1, Breakfast=1, Lunch=1, Dinner=0, Snack=2, Spare_Time/TV=9, Grooming=5}
+Day 8: {Leaving=1, Toileting=1, Showering=1, Sleeping=1, Breakfast=1, Lunch=0, Dinner=0, Snack=0, Spare_Time/TV=5, Grooming=5}
+Day 9: {Leaving=2, Toileting=2, Showering=1, Sleeping=1, Breakfast=1, Lunch=0, Dinner=0, Snack=0, Spare_Time/TV=7, Grooming=5}
+Day 10: {Leaving=2, Toileting=1, Showering=1, Sleeping=1, Breakfast=1, Lunch=0, Dinner=0, Snack=0, Spare_Time/TV=4, Grooming=4}
+Day 11: {Leaving=1, Toileting=2, Showering=1, Sleeping=1, Breakfast=1, Lunch=1, Dinner=0, Snack=0, Spare_Time/TV=3, Grooming=3}

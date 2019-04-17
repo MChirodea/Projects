@@ -1,0 +1,144 @@
+JFDML JFormDesigner: "6.0.6.2.195" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp scrollPane1::t:::x, seq {space :::p, par l {seq {par l {seq l {comp address:::::x, space :::p, comp addressLabel:::p:61:p, space :p:60:p}, seq l {par l {comp name:::::x, comp cnp:::::x}, space :::p, par l:::p {comp nameLabel::::106:x, comp pidLabel::::106:x}, space :p:15:p}}, par l {comp searchBox::t:p:192:p, comp searchField::t:p:192:p, comp searchBTN::t:p:192:p}}, seq t {comp phone:::::x, space :::p, comp phoneLabel:::p:162:p, space :p:151:p}, seq l {par t {seq l {comp addcrBTN:::p:90:p, space :::p, comp updateBTN:::p:90:p, space :::p, comp delBTN:::p:90:p, space u:::p, comp trprBTN:::p:115:p}, seq l {comp infoBTN:::p:138:p, space :::p, comp accountBTN:::p:138:p, space :::p, comp transferBTN:::p:121:p, space :::p, comp processBTN:::p::p}}, space ::20:x, comp logoutBTN:::p::p}}, space :::p}}"
+			"$verticalGroup": "par l {seq l {comp scrollPane1:::p:197:p, space s:::p, par b {comp searchBox::b:p::p, comp name::b:p::p, comp nameLabel::b:p::p}, space :::p, par b {comp searchField::b:p::p, comp pidLabel::b:p::p, comp cnp::b:p::p}, space :::p, par b {comp searchBTN::b:p::p, comp address::b:p::p, comp addressLabel::b:p::p}, space :::p, par b {comp phone::b:p::p, comp phoneLabel::b:p::p}, space s:::p, par b {comp addcrBTN::b:p::p, comp updateBTN::b:p::p, comp delBTN::b:p::p, comp trprBTN::b:p::p}, space s::46:x, par b {comp infoBTN::b:p::p, comp accountBTN::b:p::p, comp logoutBTN::b:p::p, comp processBTN::b:p::p, comp transferBTN::b:p::p}, space :::p}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table1"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( "" )
+							add( null )
+						} )
+					}, new java.util.Vector {
+						add( "ID" )
+						add( "NAME" )
+						add( "PID" )
+						add( "ADDRESS" )
+						add( "PHONE" )
+					}, new java.util.Vector {
+						add( class java.lang.Integer )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.String )
+					}, new java.util.Vector {
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "table1MouseClicked", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "name"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "cnp"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "address"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "infoBTN"
+				"text": "Add / Update/Delete"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "infoBTNMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "logoutBTN"
+				"text": "Log Out"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "phone"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "nameLabel"
+				"text": "NAME"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "pidLabel"
+				"text": "PID"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "addressLabel"
+				"text": "ADDRESS"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "phoneLabel"
+				"text": "PHONE NR."
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "searchField"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "searchBTN"
+				"text": "SEARCH"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "searchBox"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "ID"
+					addElement( "ID" )
+					addElement( "NAME" )
+					addElement( "PID" )
+					addElement( "ADDRESS" )
+					addElement( "PHONE" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "transferBTN"
+				"text": "Transfer Accounts"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "transferBTNMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "processBTN"
+				"text": "Process Bill"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "processBTNMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "accountBTN"
+				"text": "Create/Update/Delete"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "accountBTNMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "addcrBTN"
+				"text": "Add/Create"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "addcrBTNMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "updateBTN"
+				"text": "Update"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "delBTN"
+				"text": "Delete"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "trprBTN"
+				"text": "Transfer/Process"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 0 )
+			"size": new java.awt.Dimension( 620, 515 )
+		} )
+	}
+}

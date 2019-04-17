@@ -1,0 +1,6 @@
+UID : Action : Date
+3 : Add Account -> CID : 2 : 2019-03-25
+3 : Transfer 6 -> 1 10000.0 : 2019-03-25
+3 : Transfer 6 -> 1 1.0E35 : 2019-03-25
+3 : Transfer 6 -> 1 100.0 : 2019-03-25
+3 : Logout : 2019-03-25
