@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Online PC Build Assistant Favourites</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+      <link rel="shortcut icon" href="https://i.imgur.com/xtA9idS.png" type="image/x-icon">
+      <link rel="icon" href="https://i.imgur.com/xtA9idS.png" type="image/x-icon">
+   </head>
+   <body>
+      <div class="container">
+         <div class="row justify-content-md-center" style="padding-top:120px;">
+            <div class="col-md-6 align-self-center">
+               <div class="p-3 mb-2 bg-danger text-white text-center">
+                  PC Build Assistant Favourites
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+      <div class="row justify-content-md-center">
+         <div class="col-md-6 align-self-center">
+            <div class="p-3 mb-2 bg-light text-dark">
+                <form action = "/OPBA/buildpc/favourites" role = "form" method = "POST">
+                  {% csrf_token %}
+                  <table class="table">
+                     <thead class="thead-light">
+                        <tr>
+                           <th scope="col">#</th>
+                           <th scope="col">Name</th>
+                           <th scope="col">Type</th>
+                           <th scope="col">Price</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                      {% for iterate in data%}
+                        <tr>
+                           <th scope="row">{{ forloop.counter }}</th>
+                           <td><a href={{iterate.link}}>{{iterate.name}}</a></td>
+                           <td>{{iterate.type}}</td>
+                           <td>{{iterate.price}} RON</td>
+                        </tr>
+                      {% endfor %}
+                     </tbody>
+                  </table>
+               <div class="row" "text-align: center;">
+                  <div class="col-lg-6">
+                    <a class="btn btn-danger" href="http://localhost:8000/OPBA/home" role="button">Back</a>
+                  </div>                              
+               </div>
+               </form>
+            </div>
+         </div>
+      </div>
+      </div>
+      <script src="{% static 'js/bootstrap.js' %}"></script>
+   </body>
+</html>
