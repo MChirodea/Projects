@@ -1,0 +1,14 @@
+name: Casual test
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ macos-12, macos-13, macos-14 ]
+    runs-on: ${{ matrix.os }}
+    steps:
+    - name: Print
+      run: |
+        echo "!"
